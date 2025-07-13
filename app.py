@@ -40,6 +40,8 @@ def user_input_features():
 input_df = user_input_features()
 
 # Train regression model
+st.write("Columns in your dataset:", df.columns.tolist())
+
 X = df[["age", "sex", "cp", "chol", "thalach"]]
 y = df["target"]
 
